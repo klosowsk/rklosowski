@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-6 pb-12 pt-12 md:p-24 md:pb-32 md:pt-32">
+    <main className="flex min-h-screen flex-col items-center justify-center p-6 pt-20 md:p-20">
       <div className="w-full max-w-3xl">
-        <div className="flex flex-col items-start gap-8 md:flex-row md:gap-20">
+        <div className="flex flex-col items-start gap-20 md:flex-row md:gap-20 md:pt-20">
           <section className="flex flex-col space-y-4">
             <div className="relative h-64 w-64">
               <Image
@@ -26,6 +26,16 @@ export default function Home() {
               <p className="text-md mt-0 pt-0 font-mono text-gray-500">
                 Software Engineer
               </p>
+              <div className="pt-0">
+                <a
+                  className="text-md font-bold"
+                  href="https://blog.rklosowski.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {`📓 My blog ->`}
+                </a>
+              </div>
             </div>
           </section>
           <section className="flex flex-col space-y-4">
@@ -55,9 +65,25 @@ export default function Home() {
                 @tyb
               </a>{" "}
               and tinkering with some side projects, including my personal
-              website and a blog.
+              website and a{" "}
+              <a
+                className="font-mono text-cyan-500"
+                href="https://blog.rklosowski.com"
+                target="_blank"
+              >
+                blog
+              </a>
+              .
             </p>
             <div className="flex gap-4">
+              <a
+                className="font-mono text-sm text-cyan-500"
+                href="https://blog.rklosowski.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Blog
+              </a>
               <a
                 className="font-mono text-sm text-cyan-500"
                 href="https://www.linkedin.com/in/rodrigo-klosowski/"
@@ -147,7 +173,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-24 w-full max-w-3xl">
+      <div className="mb-24 mt-24 w-full max-w-3xl">
         <p>
           <a
             className="font-mono text-2xl text-cyan-500"
