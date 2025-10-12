@@ -5,7 +5,7 @@ export default function KeynotesSection() {
     <div className="mt-24 w-full max-w-3xl">
       <div className="flex flex-col space-y-4">
         <p className="text-5xl font-medium">🎤 My keynotes</p>
-        <p className="pb-4">Contact me if you'd like me to speak at your event!</p>
+        <p className="pb-4">Contact me if you&apos;d like me to speak at your event!</p>
         <div className="space-y-4">
           <Keynote
             title="AI in Modern Software Development: From Theory to Production"
