@@ -24,8 +24,8 @@ export default function RootLayout({
         />
         <script
           defer
-          data-domain="rklosowski.com"
-          src="https://plausible.rklosowski.com/js/script.js"
+          src="https://analytics.rklosowski.com/umami"
+          data-website-id="4c7dea63-9e22-45b7-8165-ab3f8dad9a83"
         ></script>
       </head>
       <body className={inter.className}>
