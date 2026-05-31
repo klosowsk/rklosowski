@@ -2,20 +2,29 @@
   "name": "rklosowski.com",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "yarn@4.10.3",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "images": "node scripts/optimize-images.mjs",
+    "build": "node scripts/optimize-images.mjs && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@next/third-parties": "^14.2.5",
+    "gray-matter": "^4.0.3",
+    "highlight.js": "^11.11.1",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-markdown": "^10.1.0",
+    "rehype-highlight": "^7.0.2",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.1",
     "sharp": "^0.33.4"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

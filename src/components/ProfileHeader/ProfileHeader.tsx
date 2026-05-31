@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProfileHeader() {
   return (
@@ -19,14 +20,9 @@ export default function ProfileHeader() {
           Software Engineer
         </p>
         <div className="pt-0">
-          <a
-            className="text-md font-bold"
-            href="https://blog.rklosowski.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link className="text-md font-bold" href="/blog">
             {`📓 My blog ->`}
-          </a>
+          </Link>
         </div>
       </div>
     </section>

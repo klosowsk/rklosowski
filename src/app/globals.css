@@ -14,13 +14,74 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
 }
 
+::selection {
+  background: rgba(6, 182, 212, 0.25); /* cyan-500 @ 25% */
+}
+
+/* Inline code: cyan with a subtle tinted background (block code is untouched —
+   it keeps the github-dark theme). */
+.prose :not(pre) > code {
+  color: #0891b2; /* cyan-600 */
+  background: rgba(6, 182, 212, 0.12);
+  padding: 0.12em 0.36em;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  font-size: 0.875em;
+}
+@media (prefers-color-scheme: dark) {
+  .prose :not(pre) > code {
+    color: #22d3ee; /* cyan-400 */
+    background: rgba(6, 182, 212, 0.16);
+  }
+}
+
+/* Code blocks: let the inner highlighted <code> be the full-width box (same
+   width as the body text) instead of being inset by the <pre>'s own padding. */
+.prose pre {
+  background: transparent;
+  padding: 0;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  border-radius: 0;
+}
+.prose pre > code {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 0.5rem;
+  padding: 1rem 1.15rem;
+  font-size: 0.85em;
+  line-height: 1.6;
+}
+
+/* Image captions: centered, small, muted, pulled up under the image. */
+.prose p.img-caption {
+  margin-top: -0.85rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgb(107, 114, 128); /* gray-500 */
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Let image galleries breathe a bit wider than the reading column on large
+     screens, without going full-bleed. */
+  @media (min-width: 1024px) {
+    .gallery-breakout {
+      width: calc(100% + 6rem);
+      margin-left: -3rem;
+    }
   }
 }

@@ -30,22 +30,13 @@ export default function AboutSection() {
         , with AI solutions to evaluate, coach, and prepare
         strong public safety teams. I'm also tinkering with some side projects,
         including my&nbsp;
-        <a
-          className="font-mono text-cyan-500"
-          href="https://blog.rklosowski.com"
-          target="_blank"
-        >
+        <a className="font-mono text-cyan-500" href="/blog">
           blog
         </a>
         .
       </p>
       <div className="flex gap-4">
-        <a
-          className="font-mono text-sm text-cyan-500"
-          href="https://blog.rklosowski.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="font-mono text-sm text-cyan-500" href="/blog">
           Blog
         </a>
         <a
