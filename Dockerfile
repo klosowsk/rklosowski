@@ -4,11 +4,14 @@ FROM node:20-alpine AS builder
 # Set the working directory inside the container
 WORKDIR /app
 
+# Enable Corepack so the pinned Yarn 4 (packageManager field) is used
+RUN corepack enable
+
 # Copy package.json and yarn.lock to the working directory
 COPY package.json yarn.lock ./
 
 # Install dependencies using yarn
-RUN yarn install --frozen-lockfile
+RUN yarn install --immutable
 
 # Copy the entire project to the working directory
 COPY . .
