@@ -1,8 +1,8 @@
 ---
 title: A new coding approach to replace Redux with Context API and Hooks
-slug: an-updated-guide-to-installing-react-native-without-android-studio-2
+slug: replace-redux-with-context-api-and-hooks
 date: '2019-05-20'
-canonicalUrl: https://blog.rklosowski.com/an-updated-guide-to-installing-react-native-without-android-studio-2/
+canonicalUrl: https://blog.rklosowski.com/replace-redux-with-context-api-and-hooks/
 ---
 
 ![](/blog/images/2024/07/0_Muwxx05bEPznYIO5.webp)
