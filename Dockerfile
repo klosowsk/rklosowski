@@ -7,16 +7,14 @@ WORKDIR /app
 # Enable Corepack so the pinned Yarn 4 (packageManager field) is used
 RUN corepack enable
 
-# Copy package.json and yarn.lock to the working directory
-COPY package.json yarn.lock ./
+# Copy the project and install in-image (after copy) so the node_modules
+# install state is consistent — host .yarn state is ignored via .dockerignore.
+COPY . .
 
 # Install dependencies using yarn
 RUN yarn install --immutable
 
-# Copy the entire project to the working directory
-COPY . .
-
-# Build the project
+# Build the project (optimizes images to WebP, then next build)
 RUN yarn build
 
 # Stage 2: Run Stage
