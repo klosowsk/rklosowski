@@ -20,20 +20,18 @@ const en = {
     about: {
       hello: "✋🏻, hello!!!",
       intro:
-        "Hey there! I'm Rodrigo, a software engineer hailing from the sunny lands of Brazil 🇧🇷.",
-      listIntro: "I'm all about:",
+        "Hi, I'm Rodrigo. I'm a Brazilian software engineer, and I like building tools for real problems.",
+      listIntro: "Away from the keyboard:",
       items: [
-        "👾 Crafting cool software",
-        "🏃 Running like there's no tomorrow",
-        "🪴 Nurturing my plant babies",
-        "☕️ Drinking coffee",
-        "🌎 Jet-setting around the globe",
-        "🔧 Tinkering with my homelab like a tech wizard",
-        "🚀 Creating startups",
+        "🏃 I run",
+        "🪴 I take care of my plants",
+        "☕️ I drink too much coffee",
+        "🌎 I travel when I can",
+        "🔧 I tinker with my homelab",
       ],
-      buildingPre: "Right now, I'm building",
+      buildingPre: "During the day, I work at",
       buildingPost:
-        ", with AI solutions to evaluate, coach, and prepare strong public safety teams. I'm also tinkering with some side projects, including my",
+        ". Outside of that, I keep working on personal projects, open source, and a few ideas that eventually become posts on my",
       blogWord: "blog",
       links: {
         blog: "Blog",
@@ -44,16 +42,24 @@ const en = {
     },
     projects: {
       heading: "🛠️ Personal projects",
-      intro: "Side projects I tinker with on my own time:",
+      intro: "Things I'm building outside of work:",
       dataBolsa: {
         name: "DataBolsa",
-        tagline: "Open data for the Brazilian stock market (B3).",
+        tagline: "Brazilian financial data for APIs, scripts, and agents.",
+      },
+      supabaseHa: {
+        name: "Supabase HA",
+        tagline: "A self-hosted Supabase experiment with HA PostgreSQL on Kubernetes.",
+      },
+      tmuxscout: {
+        name: "tmuxscout",
+        tagline: "A tmux navigator for keeping track of coding agents across sessions.",
       },
     },
     experience: {
       heading: "tl;dr",
       summary:
-        "Software engineer specializing in AI, Blockchain, full-stack development, and DevOps. Currently building responsible AI solutions for public safety teams at @govworx. With entrepreneurial expertise and a strong sense of ownership, I've taken projects from the ground up through investment rounds. Tech stack: React, React Native, Node.js, Python, AI/ML, blockchain, AWS, Terraform, k8s.",
+        "I've worked in software for a while, usually close to development, product, infrastructure, and startups. I've worked across web, mobile, blockchain, DevOps, and AI. I like taking ideas from zero to product, then pushing them until they can become an investment, a business, or an exit. I had an exit with Teleporting. These days, I'm especially interested in agents, tools for builders, and data that's easier to use.",
       // Linked company handle inside the summary (kept clickable around the text).
       govworxLabel: "@govworx",
       jobs: [

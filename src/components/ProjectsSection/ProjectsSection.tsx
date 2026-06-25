@@ -14,12 +14,20 @@ export default function ProjectsSection({
   // One entry per personal project. Add more here as they're ready to surface.
   const projects: ProjectLink[] = [
     { ...t.dataBolsa, href: "https://databolsa.com" },
+    {
+      ...t.supabaseHa,
+      href: "/blog/i-built-supabase-with-ha-postgresql-on-kubernetes-and-why-you-might-want-to-self-host-2",
+    },
+    {
+      ...t.tmuxscout,
+      href: "/blog/my-terminal-needed-air-traffic-control",
+    },
   ];
 
   return (
     <div className="mt-24 w-full max-w-3xl">
       <div className="flex flex-col space-y-4">
-        <p className="text-5xl font-medium">{t.heading}</p>
+        <p className="text-3xl font-medium">{t.heading}</p>
         <p className="pb-4">{t.intro}</p>
         <div className="space-y-4">
           {projects.map((p) => (

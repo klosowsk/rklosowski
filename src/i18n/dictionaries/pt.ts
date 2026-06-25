@@ -18,20 +18,18 @@ const pt: Dictionary = {
     about: {
       hello: "✋🏻, olá!!!",
       intro:
-        "E aí! Eu sou o Rodrigo, engenheiro de software das terras ensolaradas do Brasil 🇧🇷.",
-      listIntro: "Curto bastante:",
+        "Oi, eu sou o Rodrigo. Sou engenheiro de software brasileiro e gosto de construir ferramentas para problemas reais.",
+      listIntro: "Fora do teclado:",
       items: [
-        "👾 Criar softwares legais",
-        "🏃 Correr como se não houvesse amanhã",
-        "🪴 Cuidar das minhas plantinhas",
-        "☕️ Tomar café",
-        "🌎 Rodar o mundo",
-        "🔧 Mexer no meu homelab feito um mago da tecnologia",
-        "🚀 Criar startups",
+        "🏃 corro",
+        "🪴 cuido das plantas",
+        "☕️ tomo café demais",
+        "🌎 viajo quando dá",
+        "🔧 mexo no homelab",
       ],
-      buildingPre: "Atualmente, estou construindo a",
+      buildingPre: "Durante o dia, trabalho na",
       buildingPost:
-        ", com soluções de IA para avaliar, treinar e preparar equipes fortes de segurança pública. Também mexo em alguns projetos paralelos, incluindo meu",
+        ". Fora dele, sigo mexendo em projetos próprios, open source e algumas ideias que viram posts no meu",
       blogWord: "blog",
       links: {
         blog: "Blog",
@@ -42,16 +40,24 @@ const pt: Dictionary = {
     },
     projects: {
       heading: "🛠️ Projetos pessoais",
-      intro: "Projetos paralelos que desenvolvo no meu tempo livre:",
+      intro: "Coisas que estou construindo fora do trabalho:",
       dataBolsa: {
         name: "DataBolsa",
-        tagline: "Dados abertos da bolsa brasileira (B3).",
+        tagline: "Dados financeiros brasileiros para APIs, scripts e agentes.",
+      },
+      supabaseHa: {
+        name: "Supabase HA",
+        tagline: "Um experimento de Supabase self-hosted com PostgreSQL HA no Kubernetes.",
+      },
+      tmuxscout: {
+        name: "tmuxscout",
+        tagline: "Um navegador para acompanhar agentes de código espalhados pelo tmux.",
       },
     },
     experience: {
       heading: "tl;dr",
       summary:
-        "Engenheiro de software especializado em IA, Blockchain, desenvolvimento full-stack e DevOps. Atualmente construindo soluções de IA responsável para equipes de segurança pública na @govworx. Com perfil empreendedor e forte senso de dono, levei projetos do zero até rodadas de investimento. Stack: React, React Native, Node.js, Python, IA/ML, blockchain, AWS, Terraform, k8s.",
+        "Trabalho com software há alguns anos, quase sempre perto de desenvolvimento, produto, infraestrutura e startups. Já mexi com web, mobile, blockchain, DevOps e IA. Gosto de tirar ideias do papel, transformar projetos em produto e acelerar até virar investimento, negócio ou exit. Tive um exit com a Teleporting. Hoje meu interesse está muito em agentes, ferramentas para builders e dados mais fáceis de usar.",
       govworxLabel: "@govworx",
       jobs: [
         { title: "Engenheiro de software", company: "@govworx", date: "2025-presente" },
