@@ -40,3 +40,6 @@ docker-compose.yml
 
 # vscode
 .vscode
+
+# private working folder (content backlog, screenshots, validation artifacts — never committed)
+/.private/

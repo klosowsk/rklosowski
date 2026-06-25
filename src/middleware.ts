@@ -7,6 +7,21 @@ const SLUG_REDIRECTS: Record<string, string> = {
     "replace-redux-with-context-api-and-hooks",
 };
 
+// Seed the `locale` cookie from Accept-Language on first visit, so the chosen
+// language is deterministic for later requests and the toggle has a value to
+// override. Only sets it when absent; never overrides an existing choice.
+function seedLocale(req: NextRequest, res: NextResponse): NextResponse {
+  if (!req.cookies.get("locale")) {
+    const accept = (req.headers.get("accept-language") || "").toLowerCase();
+    res.cookies.set("locale", accept.startsWith("pt") ? "pt" : "en", {
+      path: "/",
+      maxAge: 31536000,
+      sameSite: "lax",
+    });
+  }
+  return res;
+}
+
 // Serve the blog on the legacy subdomain (blog.rklosowski.com/<slug>) with the
 // exact same slugs Ghost used, so indexed URLs keep returning 200 (no SEO loss).
 // Internally everything lives under /blog, so we rewrite the subdomain's paths
@@ -30,7 +45,7 @@ export function middleware(req: NextRequest) {
     return NextResponse.redirect(url, 301);
   }
 
-  if (!isBlogHost) return NextResponse.next();
+  if (!isBlogHost) return seedLocale(req, NextResponse.next());
 
   if (p === "" || p === "/blog") {
     url.pathname = "/blog";
@@ -39,7 +54,7 @@ export function middleware(req: NextRequest) {
   } else {
     url.pathname = `/blog${p}`;
   }
-  return NextResponse.rewrite(url);
+  return seedLocale(req, NextResponse.rewrite(url));
 }
 
 export const config = {

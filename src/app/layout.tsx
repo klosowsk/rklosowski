@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { getLocale } from "@/i18n/getLocale";
+import { htmlLang } from "@/i18n/config";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,8 +18,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = getLocale();
   return (
-    <html lang="en">
+    <html lang={htmlLang[locale]}>
       <head>
         <link
           rel="icon"

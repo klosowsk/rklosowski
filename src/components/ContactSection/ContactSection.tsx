@@ -1,4 +1,10 @@
-export default function ContactSection() {
+import type { Dictionary } from "@/i18n/dictionaries";
+
+export default function ContactSection({
+  t,
+}: {
+  t: Dictionary["landing"]["contact"];
+}) {
   return (
     <div className="mb-24 mt-24 w-full max-w-3xl">
       <p>
@@ -8,7 +14,7 @@ export default function ContactSection() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          📨 Contact me!!!
+          {t.cta}
         </a>
       </p>
     </div>

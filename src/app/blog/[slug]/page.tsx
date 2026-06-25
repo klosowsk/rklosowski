@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { getAllPosts, getPostSlugs, formatDate } from "@/lib/posts";
 import Markdown from "@/components/blog/Markdown";
 import PostFooterNav from "@/components/blog/PostFooterNav";
+import { getRequestDictionary } from "@/i18n/getLocale";
 
 export function generateStaticParams() {
   return getPostSlugs().map((slug) => ({ slug }));
@@ -40,6 +41,7 @@ export function generateMetadata({
 }
 
 export default function PostPage({ params }: { params: { slug: string } }) {
+  const { locale, t } = getRequestDictionary();
   const { post, newer, older } = neighbours(params.slug);
   if (!post) notFound();
 
@@ -47,7 +49,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
     <main className="flex min-h-screen flex-col items-center px-6 pb-16 pt-12 md:pt-16">
       <article className="w-full max-w-2xl">
         <Link href="/blog" className="text-sm font-bold text-cyan-500">
-          {`<- all posts`}
+          {t.blog.post.allPosts}
         </Link>
 
         <header className="mb-8 mt-5 flex flex-col space-y-5">
@@ -64,10 +66,11 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             />
             <div className="flex flex-col leading-tight">
               <span className="text-sm font-medium">
-                Published by Rodrigo Klosowski
+                {t.blog.post.publishedBy}
               </span>
               <span className="font-mono text-xs text-gray-500">
-                {formatDate(post.date)} · {post.readingMinutes} min read
+                {formatDate(post.date, locale)} · {post.readingMinutes}{" "}
+                {t.blog.post.minRead}
               </span>
             </div>
           </div>
@@ -93,7 +96,12 @@ export default function PostPage({ params }: { params: { slug: string } }) {
           <Markdown content={post.content} />
         </div>
 
-        <PostFooterNav older={older} newer={newer} />
+        <PostFooterNav
+          older={older}
+          newer={newer}
+          previousLabel={t.blog.post.previous}
+          nextLabel={t.blog.post.next}
+        />
       </article>
     </main>
   );

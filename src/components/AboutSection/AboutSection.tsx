@@ -1,25 +1,22 @@
-/* eslint-disable react/no-unescaped-entities */
+import type { Dictionary } from "@/i18n/dictionaries";
 
-export default function AboutSection() {
+export default function AboutSection({
+  t,
+}: {
+  t: Dictionary["landing"]["about"];
+}) {
   return (
     <section className="flex flex-col space-y-4">
-      <p className="text-3xl font-medium">✋🏻, hello!!!</p>
-      <p>
-        Hey there! I'm Rodrigo, a software engineer hailing from the sunny
-        lands of Brazil 🇧🇷.
-      </p>
-      <p>I'm all about:</p>
+      <p className="text-3xl font-medium">{t.hello}</p>
+      <p>{t.intro}</p>
+      <p>{t.listIntro}</p>
       <ul className="list-disc pl-8">
-        <li>👾 Crafting cool software</li>
-        <li>🏃 Running like there's no tomorrow</li>
-        <li>🪴 Nurturing my plant babies</li>
-        <li>☕️ Drinking coffee</li>
-        <li>🌎 Jet-setting around the globe</li>
-        <li>🔧 Tinkering with my homelab like a tech wizard</li>
-        <li>🚀 Creating startups</li>
+        {t.items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
       </ul>
       <p>
-        Right now, I'm building{" "}
+        {t.buildingPre}{" "}
         <a
           className="font-mono text-cyan-500"
           href="https://www.govworx.ai/"
@@ -27,17 +24,23 @@ export default function AboutSection() {
         >
           @govworx
         </a>
-        , with AI solutions to evaluate, coach, and prepare
-        strong public safety teams. I'm also tinkering with some side projects,
-        including my&nbsp;
+        {t.buildingPost}&nbsp;
         <a className="font-mono text-cyan-500" href="/blog">
-          blog
+          {t.blogWord}
         </a>
         .
       </p>
-      <div className="flex gap-4">
+      <div className="flex flex-wrap gap-4">
         <a className="font-mono text-sm text-cyan-500" href="/blog">
-          Blog
+          {t.links.blog}
+        </a>
+        <a
+          className="font-mono text-sm text-cyan-500"
+          href="https://databolsa.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          DataBolsa
         </a>
         <a
           className="font-mono text-sm text-cyan-500"
@@ -45,7 +48,7 @@ export default function AboutSection() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          LinkedIn
+          {t.links.linkedin}
         </a>
         <a
           className="font-mono text-sm text-cyan-500"
@@ -53,7 +56,7 @@ export default function AboutSection() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Instagram
+          {t.links.instagram}
         </a>
         <a
           className="font-mono text-sm text-cyan-500"
@@ -61,7 +64,7 @@ export default function AboutSection() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub
+          {t.links.github}
         </a>
       </div>
     </section>
