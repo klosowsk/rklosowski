@@ -21,6 +21,7 @@ const pt: Dictionary = {
         "Oi, eu sou o Rodrigo. Sou engenheiro de software brasileiro e gosto de construir ferramentas para problemas reais.",
       listIntro: "Fora do teclado:",
       items: [
+        "❤️ passo tempo com a Juliana e meu cachorro",
         "🏃 corro",
         "🪴 cuido das plantas",
         "☕️ tomo café demais",
