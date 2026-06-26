@@ -23,12 +23,11 @@ const en = {
         "Hi, I'm Rodrigo. I'm a Brazilian software engineer, and I like building tools for real problems.",
       listIntro: "Away from the keyboard:",
       items: [
-        "❤️ my girl and my dog",
         "🏃 I run",
-        "🪴 I take care of my plants",
         "☕️ I drink too much coffee",
         "🌎 I travel when I can",
         "🔧 I tinker with my homelab",
+        "❤️ my girl, plants, and my dogs",
       ],
       buildingPre: "During the day, I work at",
       buildingPost:

@@ -18,15 +18,14 @@ const pt: Dictionary = {
     about: {
       hello: "✋🏻, olá!!!",
       intro:
-        "Oi, eu sou o Rodrigo. Sou engenheiro de software brasileiro e gosto de construir ferramentas para problemas reais.",
+        "Oi, eu sou o Rodrigo. Sou um engenheiro de software brasileiro e gosto de construir ferramentas para problemas reais.",
       listIntro: "Fora do teclado:",
       items: [
-        "❤️ minha garota e meu cachorro",
         "🏃 corro",
-        "🪴 cuido das plantas",
         "☕️ tomo café demais",
         "🌎 viajo quando dá",
         "🔧 mexo no homelab",
+        "❤️ minha noiva, plantas e dois cachorros",
       ],
       buildingPre: "Durante o dia, trabalho na",
       buildingPost:
