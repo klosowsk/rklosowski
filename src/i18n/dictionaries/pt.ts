@@ -95,12 +95,6 @@ const pt: Dictionary = {
           description:
             "Conheça aplicações práticas de blockchain além das criptomoedas, com foco em casos de uso reais e na integração com o ecossistema da Ethereum Virtual Machine (EVM) para aplicações descentralizadas (dApps).",
         },
-        {
-          title:
-            "Destravando Escalabilidade: Arquiteturas Limpas com Nest e Kubernetes",
-          description:
-            "Explore os princípios de arquitetura limpa usando Nest.js e Kubernetes. Aprenda a projetar aplicações escaláveis e fáceis de manter, que se adaptam às necessidades do negócio.",
-        },
       ],
     },
     contact: {

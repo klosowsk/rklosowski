@@ -98,12 +98,6 @@ const en = {
           description:
             "Gain insights into practical blockchain applications beyond cryptocurrency, focusing on real-world use cases and integrating with the Ethereum Virtual Machine (EVM) ecosystem for decentralized applications (dApps).",
         },
-        {
-          title:
-            "Unlocking Scalability: Building Clean Architectures with Nest and Kubernetes",
-          description:
-            "Explore the principles of clean architecture using Nest.js and Kubernetes. Learn how to design scalable and maintainable applications that adapt to evolving business needs.",
-        },
       ],
     },
     contact: {
