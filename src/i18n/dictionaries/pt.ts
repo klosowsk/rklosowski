@@ -25,7 +25,7 @@ const pt: Dictionary = {
         "☕️ tomo café demais",
         "🌎 viajo quando dá",
         "🔧 mexo no homelab",
-        "❤️ minha noiva, plantas e dois cachorros",
+        "🪴 cuido das plantas",
       ],
       buildingPre: "Durante o dia, trabalho na",
       buildingPost:

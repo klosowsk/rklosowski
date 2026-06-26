@@ -27,7 +27,7 @@ const en = {
         "☕️ I drink too much coffee",
         "🌎 I travel when I can",
         "🔧 I tinker with my homelab",
-        "❤️ my girl, plants, and my dogs",
+        "🪴 I take care of my plants",
       ],
       buildingPre: "During the day, I work at",
       buildingPost:
