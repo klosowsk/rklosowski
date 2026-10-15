@@ -1,5 +1,5 @@
 ---
-title: "Why I Built Lisa: A Project Manager for the Age of AI Agents"
+title: "Specs for an executor with amnesia"
 slug: why-i-built-lisa-a-project-manager-for-the-age-of-ai-agents
 date: '2026-01-19'
 canonicalUrl: https://blog.rklosowski.com/why-i-built-lisa-a-project-manager-for-the-age-of-ai-agents/
@@ -8,8 +8,6 @@ canonicalUrl: https://blog.rklosowski.com/why-i-built-lisa-a-project-manager-for
 ![](/blog/images/2026/01/IMG_5916.webp)
 
 *Meet Lisa. A Project Manager for the Age of AI Agents.*
-
-⭐️ **[github.com/klosowsk/lisa](https://github.com/klosowsk/lisa)**
 
 AI writes code faster than you can spec it. That's the new reality.
 
@@ -129,7 +127,7 @@ I'm already thinking about integrations: syncing with Linear, maybe Jira for the
 
 In the meantime: MCPs. If you haven't gone down the MCP rabbit hole yet, do it. Linear MCP, GitHub MCP, Notion MCP. Suddenly your AI agent can read tickets, check PR status, pull context from anywhere. Lisa plays well with this. Use Lisa for the planning structure, use MCPs to pull in external state. Best of both worlds while we figure out proper integrations.
 
-For now, Lisa manages its own state. PRs welcome.
+For now, Lisa manages its own state.
 
 * * *
 
@@ -143,10 +141,6 @@ You've probably heard of "Ralph Wiggum loops": AI agents running autonomously, b
 
 * * *
 
-## Getting Started
-
-**[github.com/klosowsk/lisa](https://github.com/klosowsk/lisa)**
-
-*MIT licensed. I built this because I was tired of my own bad specs.*
+*I built this because I was tired of my own bad specs.*
 
 *Special thanks to my fiancée for helping validate this idea and putting up with my late-night debugging sessions.* ❤️

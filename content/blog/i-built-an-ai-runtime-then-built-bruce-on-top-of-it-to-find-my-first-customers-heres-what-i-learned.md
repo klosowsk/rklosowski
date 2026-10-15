@@ -1,5 +1,5 @@
 ---
-title: "I built an AI runtime, then built Bruce on top of it to find my first customers: here's what I learned"
+title: "Cold email is cooked"
 slug: i-built-an-ai-runtime-then-built-bruce-on-top-of-it-to-find-my-first-customers-heres-what-i-learned
 date: '2026-02-24'
 canonicalUrl: https://blog.rklosowski.com/i-built-an-ai-runtime-then-built-bruce-on-top-of-it-to-find-my-first-customers-heres-what-i-learned/
@@ -59,6 +59,4 @@ That's the part that still feels a little surreal. I set up a project, described
 
 Within 48 hours, it surfaced threads I would have missed. Real conversations. Real people with the problem I'm solving.  
   
-That's the whole bet with the AI runtime I built: tools that actually understand context, not just match patterns. Bruce is the first product. There will be more.
-
-I'm still in the early stages of figuring out what Bruce should be. If you try it and have thoughts (on the scoring model, the feed setup, the signal quality), let me know! [klosowsk@gmail.com](mailto:klosowsk@gmail.com). Free tier at [smartbruce.com](https://smartbruce.com?utm_source=blog&utm_campaign=launch). No pitch, just building in public.
+That's the whole bet with the AI runtime I built: tools that actually understand context, not just match patterns.
